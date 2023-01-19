@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body onload="startDateTime()">
+    <header>
+      <div id="time-time"></div>
+      <h1>Pomodoro Timer</h1>
+    </header>
+
+    <div id="circle-container">
+      <div class="circle center">
+        <div class="circle-set"></div>
+        <div class="circle-set"></div>
+        <div id="circle-top"></div>
+        <div id="circle-progress">
+          <p id="period-title">Pomodoro 1</p>
+          <p class="timer">25:00</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="buttons-container">
+      <button class="start-button" type="button">Start</button>
+      <button class="pause-button" type="button" hidden>Pause</button>
+      <button class="reset-button" type="button">Reset</button>
+    </div>
+
+    <div class="settings-container">
+      <div class="pomodoro-settings">
+        <p>Pomodoro</p>
+        <p class="pomodoro-time">25:00</p>
+        <button class="minus-button" id="pomodoro-minus-button" type="button">
+          -
+        </button>
+        <button class="plus-button" id="pomodoro-plus-button" type="button">
+          +
+        </button>
+      </div>
+
+      <div class="short-break-settings">
+        <p>Short Break</p>
+        <p class="short-break-time">5:00</p>
+        <button
+          class="minus-button"
+          id="short-break-minus-button"
+          type="button"
+        >
+          -
+        </button>
+        <button class="plus-button" id="short-break-plus-button" type="button">
+          +
+        </button>
+      </div>
+
+      <div class="long-break-settings">
+        <p>Long break</p>
+        <p class="long-break-time">25:00</p>
+        <button class="minus-button" id="long-break-minus-button" type="button">
+          -
+        </button>
+        <button class="plus-button" id="long-break-plus-button" type="button">
+          +
+        </button>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
